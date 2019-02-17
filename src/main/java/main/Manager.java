@@ -66,6 +66,13 @@ public class Manager {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(id, firstName, lastName, department);
+
+    }
+
+    @Override
+    public String toString() {
+        return ("Manager: " + getFirstName()+ getLastName());
     }
 }
